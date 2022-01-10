@@ -1,0 +1,57 @@
+#
+# These hotkeys are independent from the
+# windowmanager you are using (qtile in this case)
+#
+# Nevertheless you need to run sxhkd for this to
+# work. In this case I use the qtile autostart bash
+# script in qtile config, to run sxhkd, among other
+# things.
+#
+
+
+##AUDIO CONTROL (pulseaudio)
+###if you are using another audio server you need 
+###to change the commands below in order to control 
+###your audio server.
+# Increase pulseaudio volume by 2%
+XF86AudioRaiseVolume
+	pactl -- set-sink-volume 0 +2%
+#  Decrease pulseaudio volume by 2%
+XF86AudioLowerVolume
+	pactl -- set-sink-volume 0 -2%
+# Toggle mute
+XF86AudioMute
+	pactl -- set-sink-mute 0 toggle
+# Toggle play/pause (spotify)
+XF86AudioPlay
+	dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+# Next song (spotify)
+XF86AudioNext
+	dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+# Previous song (spotify)
+XF86AudioPrev
+	dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+#NOTE: this works only for the first output device
+#that pulseaudio detects. If you have more than one
+#device you may want to check the pactl man page to
+#see how to control general audio.
+
+##LAUNCH PROGRAMS
+# Launch spotify
+XF86Tools
+	spotify
+# Locks the screen with the image "snow.png"
+XF86AudioStop
+	i3lock -i ~/Documents/Wallpapers/snow.png -t -b
+# Changes pywal colors and background
+super + F5
+	/bin/bash /home/sergi/.config/qtile/Scripts/walstart.sh
+
+# Toggles the keyboard layout between us and latam
+super + z
+	(setxkbmap -query | grep -q "layout:\s\+us") && setxkbmap latam || setxkbmap us
+	
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
