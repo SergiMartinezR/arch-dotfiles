@@ -3,21 +3,24 @@ My configuration files for my arch desktop environment
 
 Stuff to install
 
-  -BetterDiscord
-  -Dunst
-  -Escrotum
-  -Kitty
-  -Neofetch
-  -OBS
-  -Onedrive
-  -Pcmanfm
-  -Picom
-  -Powerlevel10k
-  -Pulseaudio and pavucontrol
-  -Qtile
-  -Ranger
-  -Rofi
-  -Spotify
-  -Sxhkd
-  -pywal
-  -yay
+<ul>
+
+  <li>-BetterDiscord</li>
+  <li>-Dunst</li>
+  <li>-Escrotum</li>
+  <li>-Kitty</li>
+  <li>-Neofetch</li>
+  <li>-OBS</li>
+  <li>-Onedrive</li>
+  <li>-Pcmanfm</li>
+  <li>-Picom</li>
+  <li>-Powerlevel10k</li>
+  <li>-Pulseaudio and pavucontrol</li>
+  <li>-Qtile</li>
+  <li>-Ranger</li>
+  <li>-Rofi</li>
+  <li>-Spotify</li>
+  <li>-Sxhkd</li>
+  <li>-pywal</li>
+  <li>-yay</li>
+</ul>
