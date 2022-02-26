@@ -23,6 +23,7 @@ Stuff to install
   <li>Spotify</li>
   <li>Sxhkd</li>
   <li>Thunderbird</li>
-  <li>Visual Studio Code</li/>
+  <li>Visual Studio Code</li>
+  <li>xdotool</li>
   <li>yay</li>
 </ul>
