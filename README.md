@@ -2,14 +2,17 @@
 My configuration files for my arch desktop environment
 
 Stuff to install
-
 <ul>
-
+  <li>bat</li>
   <li>BetterDiscord</li>
+  <li>Betterlockscreen</li>
   <li>Dunst</li>
   <li>Escrotum</li>
+  <li>fzf</li>
   <li>Kitty</li>
+  <li>lsd</li>
   <li>Neofetch</li>
+  <li>Nvim y Nvchad</li>
   <li>OBS</li>
   <li>Onedrive</li>
   <li>Pcmanfm</li>
